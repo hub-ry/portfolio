@@ -1,6 +1,7 @@
 import sshProject from "../assets/ssh-project.png"
 import lance from "../assets/lance.jpg";
 import gymProject from "../assets/gym-proj.png"
+import chatter from "../assets/chatter-proj.png"
 
 export type Project = {
   title: string
@@ -9,6 +10,8 @@ export type Project = {
   type: "Project" | "Presentation"
   start: string
   end: string
+  techStack: string[]
+  id: string
 }
 
 
@@ -19,7 +22,9 @@ export const projects: Project[] = [
     image: lance,
     type: "Project",
     start: 'string',
-    end: 'sting'
+    end: 'sting',
+    techStack: ["Python", "FastAPI", "React", "Sqlite3"],
+    id: "ticketing-system"
   },
   {
     title: "Attendace Automation",
@@ -27,7 +32,9 @@ export const projects: Project[] = [
     image: lance,
     type: "Presentation",
     start: 'string',
-    end: 'sting'
+    end: 'sting',
+    techStack: ["Python", "React"],
+    id: "attendance-automation"
   },
   {
     title: "Building Personal Server",
@@ -35,7 +42,9 @@ export const projects: Project[] = [
     image: sshProject,
     type: "Presentation",
     start: 'Dec 2025',
-    end: 'Jan 2026'
+    end: 'Jan 2026',
+    techStack: ["Linux", "SSH", "Server Configuration"],
+    id: "personal-server"
   },
   {
     title: "Protocol Tracker",
@@ -43,6 +52,18 @@ export const projects: Project[] = [
     image: gymProject,
     type: "Project",
     start: 'Aug 2025',
-    end: 'Present'
+    end: 'Present',
+    techStack: ["TypeScript", "Firebase", "Tailwind CSS"],
+    id: "protocol-tracker"
+  },
+  {
+    title: "Chatterbox",
+    subtitle: "Social Media Platform Built in CS180 Team Project",
+    image: chatter,
+    type: "Project",
+    start: 'October 2024',
+    end: 'December 2024',
+    techStack: ["Java", "MySQL", "Swing GUI"],
+    id: "chatterbox"
   },
 ]
