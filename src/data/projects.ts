@@ -21,8 +21,8 @@ export const projects: Project[] = [
     subtitle: "Built for Purdue GrandPrix",
     image: lance,
     type: "Project",
-    start: 'string',
-    end: 'sting',
+    start: 'September 2025',
+    end: 'Present',
     techStack: ["Python", "FastAPI", "React", "Sqlite3"],
     id: "ticketing-system"
   },
@@ -31,8 +31,8 @@ export const projects: Project[] = [
     subtitle: "Built for Purdue GrandPrix",
     image: lance,
     type: "Presentation",
-    start: 'string',
-    end: 'sting',
+    start: 'September 2025',
+    end: 'October 2025',
     techStack: ["Python", "React"],
     id: "attendance-automation"
   },
