@@ -34,10 +34,8 @@ export function Projects({ onProjectClick }: Props) {
             </a>
           </p>
           <p className=" text-center mt-2">
-            <a href="" className="hover:underline">
-              <span style={{ color: "#2B9275" }}>contact: </span> rhubbart [at]
-              purdue (dot) edu
-            </a>
+            <span style={{ color: "#2B9275" }}>contact: </span> rhubbart [at]
+            purdue (dot) edu
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
