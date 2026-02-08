@@ -1,6 +1,5 @@
 import { projects } from "../data/projects";
 import { ProjectCard } from "./ProjectCard";
-import { ArrowCycle } from "./ArrowCycle";
 import type { Project } from "../data/projects";
 
 type Props = {
