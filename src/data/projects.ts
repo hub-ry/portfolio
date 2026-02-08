@@ -2,15 +2,18 @@ import sshProject from "../assets/ssh-project.png"
 import lance from "../assets/lance.jpg";
 import gymProject from "../assets/gym-proj.png"
 import chatter from "../assets/chatter-proj.png"
+import serv from "../assets/ssh-serve.mov";
 
 export type Project = {
   title: string
   subtitle: string
   image: string
+  video?: string
   type: "Project" | "Presentation"
   start: string
   end: string
   techStack: string[]
+  source: "Open-Source" | "Closed-Source" | "In-Progress"
   id: string
 }
 
@@ -18,12 +21,13 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Full Stack Ticketing System",
-    subtitle: "Built for Purdue GrandPrix",
+    subtitle: "Built for Purdue GrandPrix.",
     image: lance,
     type: "Project",
     start: 'September 2025',
     end: 'Present',
     techStack: ["Python", "FastAPI", "React", "Sqlite3"],
+    source: "Open-Source",
     id: "ticketing-system"
   },
   {
@@ -34,16 +38,19 @@ export const projects: Project[] = [
     start: 'September 2025',
     end: 'October 2025',
     techStack: ["Python", "React"],
+    source: "Open-Source",
     id: "attendance-automation"
   },
   {
     title: "Building Personal Server",
     subtitle: "",
     image: sshProject,
+    video: serv,
     type: "Presentation",
     start: 'Dec 2025',
     end: 'Jan 2026',
     techStack: ["Linux", "SSH", "Server Configuration"],
+    source: "Open-Source",
     id: "personal-server"
   },
   {
@@ -53,7 +60,8 @@ export const projects: Project[] = [
     type: "Project",
     start: 'Aug 2025',
     end: 'Present',
-    techStack: ["TypeScript", "Firebase", "Tailwind CSS"],
+    techStack: ["Python", "Pandas"],
+    source: "Open-Source",
     id: "protocol-tracker"
   },
   {
@@ -64,6 +72,7 @@ export const projects: Project[] = [
     start: 'October 2024',
     end: 'December 2024',
     techStack: ["Java", "MySQL", "Swing GUI"],
+    source: "Closed-Source",
     id: "chatterbox"
   },
 ]

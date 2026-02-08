@@ -29,6 +29,17 @@ export function Projects({ onProjectClick }: Props) {
           <p className=" text-center">
             with hands‑on engineering to create reliable, end‑to‑end solutions.
           </p>
+          <p className=" text-center mt-5">
+            <a href="https://github.com/hub-ry" className="hover:underline">
+              <span style={{ color: "#2B9275" }}> github:</span> @hubry
+            </a>
+          </p>
+          <p className=" text-center mt-2">
+            <a href="" className="hover:underline">
+              <span style={{ color: "#2B9275" }}>contact: </span> rhubbart [at]
+              purdue (dot) edu
+            </a>
+          </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((p, i) => (
