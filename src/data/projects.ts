@@ -3,6 +3,7 @@ import lance from "../assets/lance.jpg";
 import gymProject from "../assets/gym-proj.png"
 import chatter from "../assets/chatter-proj.png"
 import serv from "../assets/ssh-serve.mov";
+import protocol from "../assets/protocol.mov";
 
 export type Project = {
   title: string
@@ -57,6 +58,7 @@ export const projects: Project[] = [
     title: "Protocol Tracker",
     subtitle: "Health Database built for personal use",
     image: gymProject,
+    video: protocol,
     type: "Project",
     start: 'Aug 2025',
     end: 'Present',
