@@ -61,7 +61,7 @@ export const projects: Project[] = [
     video: protocol,
     type: "Project",
     start: 'Aug 2025',
-    end: 'Present',
+    end: 'Feb 2026',
     techStack: ["Python", "Pandas"],
     source: "Open-Source",
     id: "protocol-tracker"
