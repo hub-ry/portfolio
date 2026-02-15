@@ -2,11 +2,7 @@ import { projects } from "../data/projects";
 import { ProjectCard } from "./ProjectCard";
 import type { Project } from "../data/projects";
 
-type Props = {
-  onProjectClick: (project: Project) => void;
-};
-
-export function Projects({ onProjectClick }: Props) {
+export function Projects() {
   return (
     <section className="px-6 py-12 fade-in">
       <div className="max-w-4xl mx-auto ">
@@ -39,8 +35,8 @@ export function Projects({ onProjectClick }: Props) {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          {projects.map((p, i) => (
-            <ProjectCard key={i} project={p} onClick={onProjectClick} />
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>

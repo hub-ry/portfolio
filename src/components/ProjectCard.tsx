@@ -2,7 +2,6 @@ import type { Project } from "../data/projects";
 
 type Props = {
   project: Project;
-  onClick: (project: Project) => void;
 };
 
 const sourceColors: Record<string, string> = {
@@ -26,12 +25,9 @@ const techColors: Record<string, string> = {
   "Swing GUI": "bg-zinc-700 text-zinc-200",
 };
 
-export function ProjectCard({ project, onClick }: Props) {
+export function ProjectCard({ project }: Props) {
   return (
-    <div
-      onClick={() => onClick(project)}
-      className="bg-[] border border-zinc-800/40 p-6 cursor-pointer hover:border-[oklch(0.7296_0.1818_173.64/43.79%)] transition shadow-lg hover:shadow-xl flex flex-col h-full"
-    >
+    <div className="bg-[] border border-zinc-800/40 p-6 hover:border-[oklch(0.7296_0.1818_173.64/43.79%)] transition shadow-lg hover:shadow-xl flex flex-col h-full">
       {" "}
       {/* Header Section (Title + Source Badge) */}{" "}
       <div className="-mx-6 -mt-6 px-6 py-4 bg-[oklch(0.189_0.0127_286.033)] flex items-center justify-between mb-4">
@@ -69,6 +65,11 @@ export function ProjectCard({ project, onClick }: Props) {
       {project.subtitle && (
         <p className="text-zinc-400 text-sm leading-relaxed mb-4">
           {project.subtitle}
+        </p>
+      )}
+      {project.description && (
+        <p className="text-zinc-400 text-xs leading-relaxed mb-4">
+          {project.description}
         </p>
       )}
       {/* Dates */}
