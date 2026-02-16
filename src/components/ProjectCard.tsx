@@ -85,7 +85,7 @@ export function ProjectCard({ project }: Props) {
       </p>
       {/* Tech Stack */}
       {/* Tech Stack */}{" "}
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {" "}
         {project.techStack.map((tech, id) => (
           <span
@@ -97,6 +97,22 @@ export function ProjectCard({ project }: Props) {
           </span>
         ))}{" "}
       </div>
+      {/* Links */}
+      {project.links && project.links.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-auto">
+          {project.links.map((link, id) => (
+            <a
+              key={id}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1 text-xs bg-blue-600/20 border border-blue-500/40 text-blue-300 rounded hover:bg-blue-600/30 hover:border-blue-500/60 transition"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

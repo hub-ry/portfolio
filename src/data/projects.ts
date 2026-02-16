@@ -5,6 +5,11 @@ import chatter from "../assets/chatter-proj.png"
 import serv from "../assets/ssh-serve.mov";
 import protocol from "../assets/protocol.mov";
 
+export type ProjectLink = {
+  label: "Repository" | "Live Demo" | "Live" | "Post";
+  url: string;
+};
+
 export type Project = {
   title: string
   subtitle: string
@@ -16,6 +21,7 @@ export type Project = {
   end: string
   techStack: string[]
   source: "Open-Source" | "Closed-Source" | "In-Progress"
+  links?: ProjectLink[]
   id: string
 }
 
@@ -31,6 +37,9 @@ export const projects: Project[] = [
     end: 'Present',
     techStack: ["Python", "Flask", "Sqlite3"],
     source: "Open-Source",
+    links: [
+      { label: "Repository", url: "https://github.com/hub-ry/ticketing" },
+    ],
     id: "ticketing-system"
   },
   {
@@ -56,6 +65,9 @@ export const projects: Project[] = [
     end: 'Jan 2026',
     techStack: ["Linux", "SSH", "Docker", "Tailscale"],
     source: "Open-Source",
+    links: [
+      { label: "Post", url: "https://notes.ryhub.dev/Forest/Linux-Server/Building-Personal-Linux-SSH-Server" },
+    ],
     id: "personal-server"
   },
   {
@@ -69,6 +81,10 @@ export const projects: Project[] = [
     end: 'Feb 2026',
     techStack: ["Python", "FastAPI", "Svelte", "Chart.js", "Docker","Tailscale","Linux Server"],
     source: "Open-Source",
+    links: [
+      { label: "Repository", url: "https://github.com/hub-ry/protocol" },
+      { label: "Live Demo", url: "" },
+    ],
     id: "protocol-tracker"
   },
   {
