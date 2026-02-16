@@ -30,6 +30,7 @@ const techColors: Record<string, string> = {
   "Linux Server": "border-1 border-rose-900/30 bg-rose-900/5",
   Tailscale: "border-1 border-stone-800/30 bg-stone-800/5",
   Excel: "border-1 border-green-600/30 bg-green-600/5",
+  "Unit Testing": "border-1 border-orange-200/30 bg-orange-200/5",
 };
 
 export function ProjectCard({ project }: Props) {

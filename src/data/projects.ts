@@ -35,7 +35,7 @@ export const projects: Project[] = [
     type: "Project",
     start: 'September 2025',
     end: 'Present',
-    techStack: ["Python", "Flask", "Sqlite3"],
+    techStack: ["Python", "Flask", "Sqlite3", "Unit Testing"],
     source: "In-Development",
     id: "ticketing-system"
   },
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     type: "Project",
     start: 'October 2024',
     end: 'December 2024',
-    techStack: ["Java", "MySQL", "Swing GUI"],
+    techStack: ["Java", "MySQL", "Swing GUI", "Unit Testing"],
     source: "Closed-Source",
     id: "chatterbox"
   },
