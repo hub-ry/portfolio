@@ -20,7 +20,7 @@ export type Project = {
   start: string
   end: string
   techStack: string[]
-  source: "Open-Source" | "Closed-Source" | "In-Progress"
+  source: "Open-Source" | "Closed-Source" | "In-Development"
   links?: ProjectLink[]
   id: string
 }
@@ -36,10 +36,7 @@ export const projects: Project[] = [
     start: 'September 2025',
     end: 'Present',
     techStack: ["Python", "Flask", "Sqlite3"],
-    source: "Open-Source",
-    links: [
-      { label: "Repository", url: "https://github.com/hub-ry/ticketing" },
-    ],
+    source: "In-Development",
     id: "ticketing-system"
   },
   {

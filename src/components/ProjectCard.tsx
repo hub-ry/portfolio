@@ -7,7 +7,7 @@ type Props = {
 const sourceColors: Record<string, string> = {
   "Open-Source": "bg-[oklch(0.7898_0.207_139/40.15%)] text-white",
   "Closed-Source": "bg-zinc-700 text-zinc-200",
-  "In-Progress": "bg-yellow-500 text-black",
+  "In-Development": "bg-slate-800 text-zinc-200",
 };
 
 const techColors: Record<string, string> = {
