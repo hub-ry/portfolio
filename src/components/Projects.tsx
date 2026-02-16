@@ -1,11 +1,10 @@
 import { projects } from "../data/projects";
 import { ProjectCard } from "./ProjectCard";
-import type { Project } from "../data/projects";
 
 export function Projects() {
   return (
     <section className="px-6 py-12 fade-in">
-      <div className="max-w-4xl mx-auto ">
+      <div className="max-w-[890px] mx-auto ">
         <h2
           style={{ color: "#EBEBFC" }}
           className="text-center text-3xl font-bold drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)]"

@@ -11,18 +11,25 @@ const sourceColors: Record<string, string> = {
 };
 
 const techColors: Record<string, string> = {
-  Python: "bg-zinc-700 text-zinc-200",
+  Python: "border-1 border-cyan-500/30 bg-cyan-500/5",
+  Svelte: "border-1 border-red-600/30 bg-red-600/5",
   React: "bg-zinc-700 text-zinc-200",
-  FastAPI: "bg-zinc-700 text-zinc-200",
-  Sqlite3: "bg-zinc-700 text-zinc-200",
+  FastAPI: "border-1 border-teal-500/30 bg-teal-500/5",
+  Flask: "border-1 border-teal-300/30 bg-teal-300/5",
+  Sqlite3: "border-1 border-indigo-500/30 bg-indigo-500/5",
   TypeScript: "bg-zinc-800 text-zinc-200",
   Firebase: "bg-zinc-800 text-zinc-200",
   "Tailwind CSS": "bg-zinc-800 text-zinc-200",
-  Linux: "bg-zinc-800 text-zinc-200",
-  SSH: "bg-zinc-700 text-zinc-200",
-  Java: "bg-zinc-700 text-zinc-200",
-  MySQL: "bg-zinc-700 text-zinc-200",
-  "Swing GUI": "bg-zinc-700 text-zinc-200",
+  Linux: "border-1 border-rose-900/30 bg-rose-900/5",
+  SSH: "border-1 border-sky-200/30 bg-sky-200/5",
+  Java: "border-1 border-orange-400/30 bg-orange-400/5",
+  MySQL: "border-1 border-indigo-500/30 bg-indigo-500/5",
+  "Swing GUI": "border-1 border-orange-400/30 bg-orange-400/5",
+  "Chart.js": "border-1 border-yellow-300/30 bg-yellow-300/5",
+  Docker: "border-1 border-sky-800/30 bg-sky-800/5",
+  "Linux Server": "border-1 border-rose-900/30 bg-rose-900/5",
+  Tailscale: "border-1 border-stone-800/30 bg-stone-800/5",
+  Excel: "border-1 border-green-600/30 bg-green-600/5",
 };
 
 export function ProjectCard({ project }: Props) {
@@ -68,7 +75,7 @@ export function ProjectCard({ project }: Props) {
         </p>
       )}
       {project.description && (
-        <p className="text-zinc-400 text-xs leading-relaxed mb-4">
+        <p className="text-sky-50 text-xs leading-relaxed mb-4">
           {project.description}
         </p>
       )}
@@ -83,7 +90,7 @@ export function ProjectCard({ project }: Props) {
         {project.techStack.map((tech, id) => (
           <span
             key={id}
-            className={`px-3 py-1 rounded-lg text-xs ${techColors[tech] ?? "bg-zinc-800 text-zinc-300"}`}
+            className={`px-2 py-1 text-xs ${techColors[tech] ?? "bg-zinc-800 text-zinc-300"}`}
           >
             {" "}
             {tech}{" "}
