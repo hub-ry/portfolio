@@ -1,5 +1,6 @@
 import sshProject from "../assets/ssh-project.png"
-import lance from "../assets/lance.jpg";
+import ticket from "../assets/ticket.jpg";
+import attendance from "../assets/attendance.jpg";
 import gymProject from "../assets/gym-proj.png"
 import chatter from "../assets/chatter-proj.png"
 import serv from "../assets/ssh-serve.mov";
@@ -31,7 +32,7 @@ export const projects: Project[] = [
     title: "Full Stack Ticketing System",
     subtitle: "Building a Full-Stack Ticketing System for Purdue GrandPrix 2027",
     description: "Current Design Choices: Using Flask for the backend API with SQLite3 for rapid prototyping. Implementing QR code generation for tickets and real-time seat availability tracking.",
-    image: lance,
+    image: ticket,
     type: "Project",
     start: 'September 2025',
     end: 'Present',
@@ -43,7 +44,7 @@ export const projects: Project[] = [
     title: "Attendace Automation",
     subtitle: "Automated meeting and office hours attendance using Python and Excel in my role at Purdue Grand Prix.",
     description: "Included openpyxl to automate meeting attendance through pulling from Microsoft Forms, coloring cells, and reuploading to cloud. An idea I have is to work with an OCR library like Tesseract to work with paper logs more efficiently.",
-    image: lance,
+    image: attendance,
     type: "Presentation",
     start: 'September 2025',
     end: 'October 2025',
@@ -87,7 +88,7 @@ export const projects: Project[] = [
   {
     title: "Chatterbox",
     subtitle: "Social Media Platform Built in CS180 Team Project",
-    description: "This project implements the backend for a social media platform, focusing on both the database and client-server communication. It includes user management, direct messaging, and data persistence using MySQL. The server is capable of handling multiple client connections concurrently, and a command-line client application is provided for user interaction. Note: Team of 4, Closed Source to maintain  ",
+    description: "This project implements the backend for a social media platform, focusing on both the database and client-server communication. It includes user management, direct messaging, and data persistence using MySQL. The server is capable of handling multiple client connections concurrently, and a command-line client application is provided for user interaction. Note: Team of 4, Closed Source to maintain academic integrity with Purdue University.",
     image: chatter,
     type: "Project",
     start: 'October 2024',
