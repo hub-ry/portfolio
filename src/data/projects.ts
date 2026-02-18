@@ -80,7 +80,7 @@ export const projects: Project[] = [
     source: "Open-Source",
     links: [
       { label: "Repository", url: "https://github.com/hub-ry/protocol" },
-      { label: "Live Demo", url: "" },
+      { label: "Live Demo", url: "https://hub-ry.github.io/protocol-demo/" },
     ],
     id: "protocol-tracker"
   },
